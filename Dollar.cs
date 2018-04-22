@@ -1,7 +1,7 @@
 using System;
-using MoneyTests;
 
-namespace MoneyTests
+
+namespace TDD.Logic
 {
     public class Dollar : Money
     {

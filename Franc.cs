@@ -1,7 +1,5 @@
 using System;
-using MoneyTests;
-
-namespace FrancTests
+namespace TDD.Logic
 {
     public class Franc : Money
     {

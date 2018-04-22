@@ -1,8 +1,6 @@
-using FrancTests;
-using MoneyTests;
 using NUnit.Framework;
 
-namespace DollarTests
+namespace TDD.Logic.Tests
 {
     [TestFixture]
     public class DollarTests
@@ -11,7 +9,7 @@ namespace DollarTests
         public void TestMultiplication()
         {
             Money five = Money.dollar(5);
-            Assert.AreEqual( Money.dollar(10), five.Times(2));
+            Assert.AreEqual(Money.dollar(10), five.Times(2));
             Assert.AreEqual(Money.dollar(15), five.Times(3));
         }
 

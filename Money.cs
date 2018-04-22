@@ -1,6 +1,6 @@
-using FrancTests;
 
-namespace MoneyTests
+
+namespace TDD.Logic
 {
     public abstract class Money
     {
