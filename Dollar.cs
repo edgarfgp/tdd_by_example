@@ -1,10 +1,11 @@
 using System;
+using MoneyTests;
 
-namespace DollarTests
+namespace MoneyTests
 {
-    public class Dollar
+    public class Dollar : Money
     {
-        private int amount { get; set; }
+        
         public Dollar(int amount)
         {
             this.amount = amount;
@@ -15,16 +16,5 @@ namespace DollarTests
             return new Dollar(amount * num);
         }
 
-        public override bool Equals(object obj)
-        {
-            Dollar dollar = (Dollar)obj;
-
-            if (obj == null || GetType() != obj.GetType())
-            {
-                return false;
-            }
-
-            return amount == dollar.amount;
-        }
     }
 }
