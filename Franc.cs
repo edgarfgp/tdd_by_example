@@ -10,7 +10,7 @@ namespace FrancTests
             this.amount = amount;
         }
 
-        public Franc Times(int num)
+        public override Money Times(int num)
         {
             return new Franc(amount * num);
         }

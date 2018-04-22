@@ -11,7 +11,7 @@ namespace MoneyTests
             this.amount = amount;
         }
 
-        public Dollar Times(int num)
+        public override Money Times(int num)
         {
             return new Dollar(amount * num);
         }
